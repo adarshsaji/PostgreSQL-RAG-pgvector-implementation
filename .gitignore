@@ -119,8 +119,6 @@ cython_debug/
 # VS Code
 .vscode/
 
-# Data files
-data/
 
 # Logs
 *.log
