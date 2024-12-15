@@ -1,0 +1,9 @@
+langchain
+pgvector
+sentence-transformers
+tf-keras
+langchain-huggingface
+psycopg2
+python-dotenv
+groq
+beautifulsoup4

@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: postgres_pgvector
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: fluck-chat-user
+      POSTGRES_PASSWORD: temp-password
+      POSTGRES_DB: fluck-cb-db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql # Mount your SQL file for initialisation
+
+volumes:
+  postgres_data:
