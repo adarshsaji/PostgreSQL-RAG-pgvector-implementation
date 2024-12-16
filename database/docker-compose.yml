@@ -7,9 +7,9 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: fluck-chat-user
+      POSTGRES_USER: chat-user
       POSTGRES_PASSWORD: temp-password
-      POSTGRES_DB: fluck-cb-db
+      POSTGRES_DB: chat-db
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql # Mount your SQL file for initialisation
