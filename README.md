@@ -1,4 +1,4 @@
-# Chatbot Database and Scripts Documentation
+# RAG implementation using PosgresSQL utilising pgvector extension
 
 ## Overview
 
